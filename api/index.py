@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 app = Flask(__name__)
 
 # เพิ่มการตั้งค่า CORS
-CORS(app)
+CORS(app, origins="*")
 
 # หน้าแรก (Route "/")
 @app.route('/', methods=['GET'])
