@@ -9,9 +9,9 @@ app = Flask(__name__)
 CORS(app, origins="*")
 
 # หน้าแรก (Route "/")
-@app.route('/', methods=['GET'])
-def home():
-    return jsonify({'message': 'Welcome to the YouTube Video Title API. Use /get_video_name to get video title.'})
+# @app.route('/', methods=['GET'])
+# def home():
+#     return jsonify({'message': 'Welcome to the YouTube Video Title API. Use /get_video_name to get video title.'})
 
 # Route สำหรับ /get_video_name (POST method)
 @app.route('/get_video_name', methods=['POST'])
